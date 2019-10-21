@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <body background="img/cielo.jpg">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        <!--Cabecera-->
+        <div class="jumbotron jumbotron-fluid" style="height: 60px; margin: 0px; padding: 0px;">
+            <div class="container" style="margin: 0px; padding: 0px;">
+                <h1 class="display-4">EMPRESA MS</h1>
+            </div>
+        </div>
+
+        <!--Menus con tabs de cabecera-->
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Home</a>
+                <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
+                    aria-controls="nav-about" aria-selected="false">About</a>
+                <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab"
+                    aria-controls="nav-register" aria-selected="false">Register</a>
+                <a class="nav-item nav-link" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab"
+                    aria-controls="nav-login" aria-selected="false">Login</a>
+                <a class="nav-item nav-link" id="nav-contactenos-tab" data-toggle="tab" href="#nav-contactenos"
+                    role="tab" aria-controls="nav-contactenos" aria-selected="false">Contactenos</a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+
+
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <center>
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/fzAGviEG7Yo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </center>
+            </div>
+
+
+
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">...</div>
+
+            <!--tab de register-->
+            <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                <center>
+                    <br>
+                    <form style="height: 100; width: 1000px;">
+                        <img src="img/usuario.png" alt="" style="height: 60px; width: 60px;">
+                        <div class="o1">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault01">NOMBRES:</label>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="nombres"
+                                    value="Ingresar nombre" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault02">APELLIDOS:</label>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="apellidos"
+                                    value="Ingresar apellido" required>
+                            </div>
+                        </div>
+
+                        <div class="o2">
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault05">C.I.:</label>
+                                <input type="text" class="form-control" id="validationDefault05" placeholder="Zip"
+                                    required>
+                            </div>
+                        </div>
+                        Fecha nacimiento: <input type="date" name="cumpleanios" step="1" min="2013-01-01"
+                            max="2013-12-31" value="2013-01-01">
+                        <BR>
+                        <form>
+                            <button>REGISTRAR</button>
+                            <button>CANCELAR</button>
+                        </form>
+                </center>
+
+                <!--entrada de archivos-->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Foto</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
+            </div>
+
+            <!--tab de login-->
+            <div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                    <form style="height: 100; width: 1000px;">
+                        <img src="img/usuario.png" alt="" style="height: 60px; width: 60px;">
+                        <div class="o1">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault01">Usuario:</label>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="nombres"
+                                    value="Ingresar Usuario" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault02">Contaseña:</label>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="apellidos"
+                                    value="Ingresar Contraseña" required>
+                            </div>
+                        </div>
+                        <form>
+                            <button>Ingresar</button>
+                            <button>Cancelar</button>
+                        </form>
+
+                </center>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-contactenos" role="tabpanel" aria-labelledby="nav-contactenos-tab">
+                ...
+            </div>
+        </div>
+    </body>
+
+</html>
